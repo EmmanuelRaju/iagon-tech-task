@@ -45,7 +45,7 @@
 
 	{#if isActive}
 		<svg
-			class="svg-slide absolute -bottom-0.75 left-0 h-[25%] w-full transition duration-200"
+			class="absolute -bottom-0.75 left-0 h-[25%] w-full transition duration-200"
 			in:slideSpringIn
 			out:slideSpringOut
 			viewBox="0 0 100 14"

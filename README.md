@@ -1,22 +1,34 @@
-# sv
+# Iagon Tech Task - Interactive Navigation Prototype
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A modern implementation of the Iagon Figma prototype, showcasing interactive navigation with custom animation transitions. This project demonstrates advanced frontend techniques using the latest technologies and best practices.
 
-## Creating a project
+## Overview
 
-If you're seeing this, you've probably already done this step. Congrats!
+This project replicates the Iagon design prototype with a focus on:
 
-```sh
-# create a new project
-npx sv create my-app
-```
+- **Custom Animation Transitions**: All animations are implemented using custom Svelte transition functions with cubic bezier easing curves
+- **Modern Tech Stack**: Built with SvelteKit, TypeScript, and Tailwind CSS for type-safe, scalable development
+- **Component Architecture**: Modular, reusable components following best practices for maintainability
+- **Smooth Interactions**: Interactive navigation with fluid motion design and spring physics animations
 
-To recreate this project with the same configuration:
+## Key Features
 
-```sh
-# recreate this project
-npx sv create --template minimal --types ts --add prettier eslint tailwindcss="plugins:none" --install npm iagon-task
-```
+### Custom Transition Functions
+
+- **Spring Physics**: `slideSpringIn` and `slideSpringOut` transitions create natural, bouncy animation effects using `backIn` and `backOut` easing
+- **Staggered Animations**: Independent timing for different animation properties (translate, scale) for more complex motion sequences
+
+### Component-Based Design
+
+- **Link Component** (`Link.svelte`): Reusable navigation link with built-in animations and active state management
+- **Responsive Layout**: Clean, modular structure that's easy to extend and maintain
+- **State Management**: Leverages Svelte 5's rune system with `$state()` and `$derived()` for reactive state handling
+
+### Modern Technologies
+
+- **SvelteKit**: Latest Svelte framework for building fast, optimized web applications
+- **Tailwind CSS**: Utility-first CSS for rapid, responsive design
+- **Vite**: Lightning-fast development server and build tool
 
 ## Developing
 
